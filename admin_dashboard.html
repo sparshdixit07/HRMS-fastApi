@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Admin Dashboard</h2>
+
+        <div>
+            Welcome,
+            <span id="adminName"></span>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <!-- Employee List -->
+
+        <div class="card">
+
+            <h3>Employees</h3>
+
+            <table border="1" width="100%" cellpadding="8">
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="employeeTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <br>
+
+        <!-- Quick Actions -->
+
+        <div class="card">
+
+            <h3>Quick Actions</h3>
+
+            <button onclick="window.location.href=' admin_attendance.html'">
+                Attendance
+            </button>
+
+            <button onclick="window.location.href='admin_leave.html'">
+                Leave Approval
+            </button>
+
+            <button onclick="window.location.href='admin_payroll.html'">
+                Payroll
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

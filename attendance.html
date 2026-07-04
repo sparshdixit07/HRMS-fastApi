@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Attendance Management</h2>
+
+        <button onclick="window.location.href='employee_dashboard.html'">
+            Dashboard
+        </button>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h3>Mark Attendance</h3>
+
+            <input type="date" id="date">
+
+            <input type="time" id="check_in">
+
+            <input type="time" id="check_out">
+
+            <select id="status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Half-day">Half-day</option>
+                <option value="Leave">Leave</option>
+            </select>
+
+            <button onclick="markAttendance()">
+                Save Attendance
+            </button>
+
+        </div>
+
+        <br>
+
+        <div class="card">
+
+            <h3>Attendance History</h3>
+
+            <table border="1" width="100%" cellpadding="8">
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Check In</th>
+                        <th>Check Out</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="attendanceTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/attendance.js"></script>
+
+</body>
+
+</html>

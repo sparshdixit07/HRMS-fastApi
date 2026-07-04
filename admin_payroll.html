@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>Payroll Management</h2>
+
+    <div>
+
+        <button onclick="window.location.href='admin_dashboard.html'">
+            Dashboard
+        </button>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h3>Add Payroll</h3>
+
+        <input type="number" id="employee_id" placeholder="Employee ID">
+
+        <input type="text" id="month" placeholder="Month (Example: July 2026)">
+
+        <input type="number" id="basic_salary" placeholder="Basic Salary">
+
+        <input type="number" id="bonus" placeholder="Bonus">
+
+        <input type="number" id="deduction" placeholder="Deduction">
+
+        <input type="number" id="net_salary" placeholder="Net Salary">
+
+        <button onclick="addPayroll()">
+            Add Payroll
+        </button>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h3>All Payroll Records</h3>
+
+        <table border="1" width="100%" cellpadding="8">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Employee ID</th>
+                    <th>Month</th>
+                    <th>Basic</th>
+                    <th>Bonus</th>
+                    <th>Deduction</th>
+                    <th>Net Salary</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="payrollTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/admin_payroll.js"></script>
+
+</body>
+
+</html>

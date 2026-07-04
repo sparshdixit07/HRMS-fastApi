@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS - Human Resource Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-icon">💼</span>
+                <span>HRMS</span>
+            </div>
+            <div class="navbar-buttons">
+                <button class="btn btn-login" onclick="goLogin()">Login</button>
+                <button class="btn btn-signup" onclick="goSignup()">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Human Resource Management System</h1>
+            <p>Streamline your HR operations with our modern, intuitive platform</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="goSignup()">Get Started</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>About HRMS</h2>
+            <p class="section-subtitle">Everything you need to manage your workforce efficiently</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Employee Management</h3>
+                    <p>Manage employee profiles, track performance, and maintain detailed records all in one place.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Leave Management</h3>
+                    <p>Streamline leave requests, approvals, and balance tracking with an intuitive interface.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Payroll System</h3>
+                    <p>Automate payroll processing, tax calculations, and salary management effortlessly.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics & Reports</h3>
+                    <p>Generate comprehensive reports and gain insights into your workforce data.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Data Security</h3>
+                    <p>Enterprise-grade security to keep your sensitive HR data safe and protected.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Performance Tracking</h3>
+                    <p>Monitor employee performance with goal setting and regular review cycles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Leading HRMS solution designed to simplify human resource management for modern businesses.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@hrms.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Business Ave, Suite 100</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 HRMS. All rights reserved. MADE by <span>Sparsh</span></p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function goLogin() {
+            window.location.href = "login.html";
+        }
+
+        function goSignup() {
+            window.location.href = "signup.html";
+        }
+    </script>
+
+</body>
+
+</html>

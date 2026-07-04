@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Employee Dashboard</h2>
+
+        <div>
+            Welcome,
+            <span id="employeeName"></span>
+
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Profile</h3>
+
+            <p><strong>Name:</strong> <span id="name"></span></p>
+
+            <p><strong>Employee ID:</strong> <span id="employee_id"></span></p>
+
+            <p><strong>Email:</strong> <span id="email"></span></p>
+
+            <p><strong>Department:</strong> <span id="department"></span></p>
+
+            <p><strong>Designation:</strong> <span id="designation"></span></p>
+
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+
+            <p><strong>Address:</strong> <span id="address"></span></p>
+
+            <p><strong>Salary:</strong> ₹<span id="salary"></span></p>
+        </div>
+
+        <div class="card">
+
+            <h3>Quick Actions</h3>
+
+            <button onclick="window.location='attendance.html'">
+                Attendance
+            </button>
+
+            <button onclick="window.location='leave.html'">
+                Leave Management
+            </button>
+
+            <button onclick="window.location='payroll.html'">
+                Payroll
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/employee.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Payroll</h2>
+
+        <button onclick="window.location.href='employee_dashboard.html'">
+            Dashboard
+        </button>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h3>Salary Details</h3>
+
+            <table border="1" width="100%" cellpadding="8">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Month</th>
+
+                        <th>Basic Salary</th>
+
+                        <th>Bonus</th>
+
+                        <th>Deduction</th>
+
+                        <th>Net Salary</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="payrollTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/payroll.js"></script>
+
+</body>
+
+</html>

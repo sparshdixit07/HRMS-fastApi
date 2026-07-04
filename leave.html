@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Leave Management</h2>
+
+        <button onclick="window.location.href='employee_dashboard.html'">
+            Dashboard
+        </button>
+
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h3>Apply Leave</h3>
+
+            <select id="leave_type">
+                <option value="Paid">Paid Leave</option>
+                <option value="Sick">Sick Leave</option>
+                <option value="Unpaid">Unpaid Leave</option>
+            </select>
+
+            <input type="date" id="start_date">
+
+            <input type="date" id="end_date">
+
+            <textarea
+                id="remarks"
+                rows="4"
+                placeholder="Remarks"></textarea>
+
+            <button onclick="applyLeave()">
+                Apply Leave
+            </button>
+
+        </div>
+
+        <br>
+
+        <div class="card">
+
+            <h3>My Leave Requests</h3>
+
+            <table border="1" width="100%" cellpadding="8">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Type</th>
+
+                        <th>Start</th>
+
+                        <th>End</th>
+
+                        <th>Remarks</th>
+
+                        <th>Status</th>
+
+                        <th>Admin Comment</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="leaveTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/leave.js"></script>
+
+</body>
+
+</html>

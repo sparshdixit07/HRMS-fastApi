@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Attendance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>Attendance Management</h2>
+
+    <div>
+
+        <button onclick="window.location.href='admin_dashboard.html'">
+            Dashboard
+        </button>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h3>All Employee Attendance</h3>
+
+        <table border="1" width="100%" cellpadding="8">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Employee ID</th>
+
+                    <th>Date</th>
+
+                    <th>Check In</th>
+
+                    <th>Check Out</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="attendanceTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/admin_attendance.js"></script>
+
+</body>
+
+</html>
