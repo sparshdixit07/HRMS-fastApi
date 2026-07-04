@@ -275,7 +275,7 @@ Future Improvements
 
 Developed By
 
-Shobhan Dixit
+Sparsh Dixit
 
 B.Tech Student
 
